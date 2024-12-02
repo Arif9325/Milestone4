@@ -29,8 +29,9 @@ namespace ECommerce.Api.Search.Services
                     var content = await response.Content.ReadAsByteArrayAsync();
                     var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
                     var result = JsonSerializer.Deserialize<IEnumerable<Product>>(content, options);
-                    return (false, null, response.ReasonPhrase);
+                    return (true,result,null);
                 }
+                return (false, null, response.ReasonPhrase);
             }
             catch(Exception ex) 
             {
