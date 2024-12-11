@@ -1,4 +1,12 @@
-﻿using ECommerce.Api.Customers.Interfaces;
+﻿/*Course: 		Web Programming 3
+* Assessment: 	Milestone 4
+* Created by: 	2173124
+* Date: 		<08> <12> 2024
+* Class Name: 	CustomersController.cs
+* Description: 	It's the controller for the Customers project. 
+* Time for Task:	5 hours the whole thing. 
+    */
+using ECommerce.Api.Customers.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
